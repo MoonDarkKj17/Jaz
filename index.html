@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<p id="parrafo1"></p>
+</body>
+<script src="script.js"></script>
+<script type="text/javascript">
+		// alert("Hola Mundo");
+		//document.write("<h1>Titulo</h1>");
+		
+		var a, b;
+		a = parseInt(prompt("ingrese de que nro 1"));
+		b = parseInt(prompt("ingrese de que nro 2"));	
+		//a = prompt("ingrese de que nro 1");
+		//b = prompt("ingrese de que nro 2");
+		
+		function hola(saludo){
+			console.log(saludo);
+		}
+
+		function suma(n1, n2){
+			var c = n1 + n2;
+			return c;
+		}
+
+		function resta(n1, n2){
+			var c = n1 - n2;
+			return c;
+		}
+
+		function multiplicacion(n1, n2){
+			var c = n1 * n2;
+			return c;
+		}
+
+		function division(n1, n2){
+			var c = n1 / n2;
+			return c;
+		}
+
+		function comparacion(n1, n2){
+			var resultado;
+			if(n1>n2){
+				resultado = n1+" es mayor que "+n2;
+			}
+
+			if(n1<n2){
+				resultado = n2+" es mayor que "+n1;
+			}
+
+			if(n1==n2){
+				resultado = n1+" es igual a "+n2;
+			}
+			return resultado;
+		}
+			
+		document.getElementById("parrafo1").innerHTML = 
+		"El resultado de la suma es: "+suma(a,b)+"<br>"+
+		"El resultado de la resta es: "+resta(a,b)+"<br>"+
+		"El resultado de la multiplicacion es: "+multiplicacion(a,b)+"<br>"+
+		"El resultado de la division es: "+division(a,b)+
+		"<p>"+comparacion(a,b)+"</p>";
+</script>
+</html>

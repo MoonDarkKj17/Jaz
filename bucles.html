@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bucles</title>	
+</head>
+<body>
+	<p id="parrafo1"></p>
+</body>
+<script type="text/javascript">
+	var final = window.prompt("ingrese cuantos nros busca");
+	var divisible = prompt("ingrese de que nro busca divisibles");
+	var control= 0
+	var incremental = 1;
+
+	do{
+		if(incremental%divisible==0){
+			control++;
+			document.getElementById("parrafo1").innerHTML += control+" - nro "+incremental+"<br>";		
+		}
+		incremental++;
+	}while(control<final)
+
+
+
+	// for
+		for(var i=0; i<=10; i++){
+			console.log("for valor "+i);
+			//document.getElementById("parrafo1").innerHTML += "valor "+i+"<br>";
+		}
+
+	// do ... while
+		var x,y;
+		x=0
+		y=10
+		do{
+			console.log("do valor "+x);
+			x++;
+			y++;
+		}while(y<=20)
+
+	//while
+		x=0
+		y=10
+		while(y<=20){
+			console.log("while valor "+x);
+			x++;
+			y++;
+		}
+
+		
+
+</script>
+</html>	
